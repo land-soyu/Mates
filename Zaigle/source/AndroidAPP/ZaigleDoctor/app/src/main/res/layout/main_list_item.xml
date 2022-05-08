@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/list_box"
+   android:gravity="center_vertical"
+    android:layout_marginTop="10dp"
+   >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ImageView
+      android:id="@+id/list_img"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginLeft="20dp"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/oxygen_icon"/>
+
+    <TextView
+        android:id="@+id/lv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/list_img"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:textColor="#008299"
+        android:text="aaa"
+        />
+
+    <TextView
+        android:id="@+id/lv_result_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="aa"
+        android:layout_centerInParent="true"
+        />
+  <ImageView
+      android:id="@+id/list_Rimg"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:layout_marginRight="20dp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"
+      android:src="@drawable/above_standard"
+      />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/lv_graph_ll"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical">-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/lv_graph"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Graph"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
+</LinearLayout>

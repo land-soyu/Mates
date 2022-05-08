@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="terms">
+		The collection of personal information utilization agreement \n\n
+
+Article 1 (Personal information collected and gathering method)\n
+	•	With regards to "Ouibot Service" ("the Service" hereafter), Joeun Safe Co.Ltd., ("the Comapny" hereafter) collects personal information as follows\n
+	•	Ouibot App ID, Password\n
+	•	Mobile Phone Number\n
+	•	Device Mac Address and Serial Number\n
+	•	“CCTV” recording information regarding intrusion detection\n
+	•	The company collects personal information in ways as follows\n
+	•	When users subscribes (or applies for) the Ouibot service use\n
+	•	When users installs and operates Ouibot app for the Ouibot service use\n
+	•	The company is allowed to collect and utilize the personal information in Ouibot service period. The personal information will be expired 6 months after user does not use the Ouibot Service.\n\n
+
+Article 2 (Purpose of collecting and utilizing personal information)\n
+	•	The company utilizes the personal information collected\n
+	•	Provision of Ouibot service\n
+</string>
+
+</resources>

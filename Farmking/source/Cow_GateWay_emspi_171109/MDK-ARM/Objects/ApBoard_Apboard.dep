@@ -1,0 +1,839 @@
+Dependencies for Project 'ApBoard', Target 'Apboard': (DO NOT MODIFY !)
+F (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Source\system_efm32jg1b.c)(0x5A049A03)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\system_efm32jg1b.o --omf_browse .\objects\system_efm32jg1b.crf --depend .\objects\system_efm32jg1b.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+F (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Source\ARM\startup_efm32jg1b.s)(0x5A049A03)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Drivers\emlib\inc -I..\Inc-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include--pd "__UVISION_VERSION SETA 514" --pd "EFM32JG1B200F256IM48 SETA 1" --pd "EFM32JG1B200F256GM48 SETA 1"--list .\listings\startup_efm32jg1b.lst --xref -o .\objects\startup_efm32jg1b.o --depend .\objects\startup_efm32jg1b.d)
+F (..\Drivers\emlib\src\em_assert.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_assert.o --omf_browse .\objects\em_assert.crf --depend .\objects\em_assert.d)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+F (..\Drivers\emlib\src\em_cmu.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_cmu.o --omf_browse .\objects\em_cmu.crf --depend .\objects\em_cmu.d)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5475E4F0)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5475E4EA)
+I (..\Drivers\emlib\inc\em_emu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_system.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_common.h)(0x5A049A04)
+F (..\Drivers\emlib\src\em_core.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_core.o --omf_browse .\objects\em_core.crf --depend .\objects\em_core.d)
+I (..\Drivers\emlib\inc\em_core.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (..\Drivers\emlib\inc\em_common.h)(0x5A049A04)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+F (..\Drivers\emlib\src\em_emu.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_emu.o --omf_browse .\objects\em_emu.crf --depend .\objects\em_emu.d)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5475E4EA)
+I (..\Drivers\emlib\inc\em_emu.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_system.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_common.h)(0x5A049A04)
+F (..\Drivers\emlib\src\em_gpio.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_gpio.o --omf_browse .\objects\em_gpio.crf --depend .\objects\em_gpio.d)
+I (..\Drivers\emlib\inc\em_gpio.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+F (..\Drivers\emlib\src\em_i2c.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_i2c.o --omf_browse .\objects\em_i2c.crf --depend .\objects\em_i2c.d)
+I (..\Drivers\emlib\inc\em_i2c.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5475E4EA)
+F (..\Drivers\emlib\src\em_rtcc.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_rtcc.o --omf_browse .\objects\em_rtcc.crf --depend .\objects\em_rtcc.d)
+I (..\Drivers\emlib\inc\em_rtcc.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+F (..\Drivers\emlib\src\em_system.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_system.o --omf_browse .\objects\em_system.crf --depend .\objects\em_system.d)
+I (..\Drivers\emlib\inc\em_system.h)(0x5A049A04)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5475E4F0)
+F (..\Drivers\emlib\src\em_usart.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_usart.o --omf_browse .\objects\em_usart.crf --depend .\objects\em_usart.d)
+I (..\Drivers\emlib\inc\em_usart.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+F (..\Drivers\emlib\src\em_letimer.c)(0x5A049A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\em_letimer.o --omf_browse .\objects\em_letimer.crf --depend .\objects\em_letimer.d)
+I (..\Drivers\emlib\inc\em_letimer.h)(0x5A049A04)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+F (..\Drivers\common\drivers\i2cspm.c)(0x5A049A03)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\i2cspm.o --omf_browse .\objects\i2cspm.crf --depend .\objects\i2cspm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_gpio.h)(0x5A049A04)
+I (..\Inc\i2cspmconfig.h)(0x5A08E6A0)
+I (..\Drivers\common\drivers\i2cspm.h)(0x5A049A03)
+I (..\Drivers\emlib\inc\em_i2c.h)(0x5A049A04)
+F (..\Src\main.c)(0x5A049A05)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (..\Drivers\emlib\inc\em_chip.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_system.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_gpio.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_emu.h)(0x5A049A04)
+I (..\Inc\bspconfig.h)(0x5A049A04)
+I (..\Inc\api.h)(0x5A08E69B)
+I (..\Drivers\common\drivers\i2cspm.h)(0x5A049A03)
+I (..\Inc\i2cspmconfig.h)(0x5A08E6A0)
+I (..\Drivers\emlib\inc\em_i2c.h)(0x5A049A04)
+I (..\Inc\system.h)(0x5A049A04)
+F (..\Src\MEMS.c)(0x5A049A05)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\mems.o --omf_browse .\objects\mems.crf --depend .\objects\mems.d)
+I (..\Inc\bspconfig.h)(0x5A049A04)
+I (..\Inc\MEMS.h)(0x5A049A04)
+I (..\Drivers\common\drivers\i2cspm.h)(0x5A049A03)
+I (..\Inc\i2cspmconfig.h)(0x5A08E6A0)
+I (..\Drivers\emlib\inc\em_gpio.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_i2c.h)(0x5A049A04)
+F (..\Src\api.c)(0x5A049A05)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\api.o --omf_browse .\objects\api.crf --depend .\objects\api.d)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_emu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_rtcc.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_letimer.h)(0x5A049A04)
+I (..\Inc\bspconfig.h)(0x5A049A04)
+I (..\Inc\MEMS.h)(0x5A049A04)
+I (..\Drivers\common\drivers\i2cspm.h)(0x5A049A03)
+I (..\Inc\i2cspmconfig.h)(0x5A08E6A0)
+I (..\Drivers\emlib\inc\em_gpio.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_i2c.h)(0x5A049A04)
+I (..\Inc\system.h)(0x5A049A04)
+I (..\Inc\api.h)(0x5A08E69B)
+F (..\Src\sx1276.c)(0x5A049A05)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\sx1276.o --omf_browse .\objects\sx1276.crf --depend .\objects\sx1276.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_gpio.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_common.h)(0x5A049A04)
+I (..\Inc\bspconfig.h)(0x5A049A04)
+I (..\Inc\sx1276.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_usart.h)(0x5A049A04)
+I (..\Inc\api.h)(0x5A08E69B)
+I (..\Drivers\common\drivers\i2cspm.h)(0x5A049A03)
+I (..\Inc\i2cspmconfig.h)(0x5A08E6A0)
+I (..\Drivers\emlib\inc\em_i2c.h)(0x5A049A04)
+F (..\Src\system.c)(0x5A24AEE3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include -I..\Drivers\common\drivers -I..\Drivers\emlib\inc -I..\Drivers\emdrv\common\inc -I..\Drivers\emdrv\dmadrv\inc -I..\Drivers\emdrv\dmadrv\config -I..\Drivers\emdrv\rtcdrv\inc -I..\Drivers\emdrv\rtcdrv\config -I..\Drivers\emdrv\spidrv\inc -I..\Drivers\emdrv\spidrv\config -I..\Inc --C99-I C:\Matescorp_Project\Farmking\source\Cow_GateWay_emspi_171109\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\EFM32JG1B_DFP\1.1.0\Device\EFM32JG1B\Include-D__UVISION_VERSION="514" -DEFM32JG1B200F256IM48 -DEFM32JG1B200F256GM48 --C99-o .\objects\system.o --omf_browse .\objects\system.crf --depend .\objects\system.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475E4F0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_cmu.h)(0x5A049A04)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\em_device.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b200f256gm48.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475E4F0)
+I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\system_efm32jg1b.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_msc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_emu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cmu.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_crypto.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio_p.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpio.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma_ch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_ldma.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_gpcrc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_timer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_usart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_leuart.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_letimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_cryotimer.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_pcnt.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_i2c.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_adc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_acmp.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_idac.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_cc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc_ret.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_rtcc.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog_pch.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_wdog.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dma_descriptor.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_devinfo.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_romtable.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_prs_signals.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_dmareq.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_ports.h)(0x5A049A03)
+I (..\Drivers\CMSIS\Device\SiliconLabs\EFM32JG1B\Include\efm32jg1b_af_pins.h)(0x5A049A03)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475E4F0)
+I (..\Drivers\emlib\inc\em_assert.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_bus.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_emu.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_chip.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_system.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_gpio.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_rtcc.h)(0x5A049A04)
+I (..\Inc\bspconfig.h)(0x5A049A04)
+I (..\Inc\system.h)(0x5A049A04)
+I (..\Inc\sx1276.h)(0x5A049A04)
+I (..\Drivers\emlib\inc\em_usart.h)(0x5A049A04)
+I (..\Inc\MEMS.h)(0x5A049A04)
+I (..\Drivers\common\drivers\i2cspm.h)(0x5A049A03)
+I (..\Inc\i2cspmconfig.h)(0x5A08E6A0)
+I (..\Drivers\emlib\inc\em_i2c.h)(0x5A049A04)
+I (..\Inc\api.h)(0x5A08E69B)

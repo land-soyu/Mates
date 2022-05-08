@@ -1,0 +1,101 @@
+package com.matescorp.soyu.farmkingapp;
+
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
+
+import com.matescorp.soyu.farmkingapp.util.DataPreference;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Context context;
+
+    private WebView webView;
+    private Button reload;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        context = this;
+
+        webView = (WebView)findViewById(R.id.webView);
+        reload = (Button)findViewById(R.id.reload);
+        reload.setVisibility(View.GONE);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(false);
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if(url.startsWith("tel:")){
+                    Intent dial = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(dial);
+                    return true;
+                } else if(url.startsWith("logout:")){
+
+                    DataPreference.setId(null);
+
+                    Intent intent = new Intent(context, LoginActivity.class);
+                    startActivity(intent);
+                    finish();
+                    return true;
+                }
+
+                return super.shouldOverrideUrlLoading(view, url);
+            }
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                //  page loading start
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                //  page loading end
+            }
+        });
+        webView.setWebChromeClient(new WebChromeClient() {
+        });
+        webView.loadUrl(Urls.farmking + "/mobile/index.html?id="+ DataPreference.getId()+"&pwd="+DataPreference.getPwd());
+
+        reload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                webView.reload();
+            }
+        });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if ( webView.getUrl().contains("http://www.farmking.co.kr/mobile/index.html") ) {
+            finish();
+        }
+        if (webView.canGoBack()) {
+            webView.goBack();
+        } else {
+            finish();
+        }
+    }
+}

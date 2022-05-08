@@ -1,0 +1,160 @@
+#ifndef L3G4200D_h
+#define L3G4200D_h
+
+#include <Arduino.h> // for byte data type
+
+// register addresses
+
+#define L3G4200D_WHO_AM_I      0x0F
+
+#define L3G4200D_CTRL_REG1     0x20
+#define L3G4200D_CTRL_REG2     0x21
+#define L3G4200D_CTRL_REG3     0x22
+#define L3G4200D_CTRL_REG4     0x23
+#define L3G4200D_CTRL_REG5     0x24
+#define L3G4200D_REFERENCE     0x25
+#define L3G4200D_OUT_TEMP      0x26
+#define L3G4200D_STATUS_REG    0x27
+
+#define L3G4200D_OUT_X_L       0x28
+#define L3G4200D_OUT_X_H       0x29
+#define L3G4200D_OUT_Y_L       0x2A
+#define L3G4200D_OUT_Y_H       0x2B
+#define L3G4200D_OUT_Z_L       0x2C
+#define L3G4200D_OUT_Z_H       0x2D
+
+#define L3G4200D_FIFO_CTRL_REG 0x2E
+#define L3G4200D_FIFO_SRC_REG  0x2F
+
+#define L3G4200D_INT1_CFG      0x30
+#define L3G4200D_INT1_SRC      0x31
+#define L3G4200D_INT1_THS_XH   0x32
+#define L3G4200D_INT1_THS_XL   0x33
+#define L3G4200D_INT1_THS_YH   0x34
+#define L3G4200D_INT1_THS_YL   0x35
+#define L3G4200D_INT1_THS_ZH   0x36
+#define L3G4200D_INT1_THS_ZL   0x37
+#define L3G4200D_INT1_DURATION 0x38
+
+class L3G4200D
+{
+	public:
+		typedef struct vector
+		{
+			float x, y, z;
+		} vector;
+		
+		vector g; // gyro angular velocity readings
+
+		void enableDefault(void);
+		
+		void writeReg(byte reg, byte value);
+		byte readReg(byte reg);
+		
+		void read(void);
+		
+		// vector functions
+		static void vector_cross(const vector *a, const vector *b, vector *out);
+		static float vector_dot(const vector *a,const vector *b);
+		static void vector_normalize(vector *a);
+};
+
+#endif
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <linux/i2c-dev.h>
+#include <sys/ioctl.h>
+#include <fcntl.h>
+
+void main() 
+{
+	// Create I2C bus
+	int file;
+	char *bus = "/dev/i2c-1";
+	if((file = open(bus, O_RDWR)) < 0) 
+	{
+		printf("Failed to open the bus. \n");
+		exit(1);
+	}
+	// Get I2C device, L3G4200D I2C address is 0x68(104)
+	ioctl(file, I2C_SLAVE, 0x68);
+
+	// Enable X, Y, Z-Axis and disable Power down mode(0x0F)
+	char config[2] = {0};
+	config[0] = 0x20;
+	config[1] = 0x0F;
+	write(file, config, 2);
+	// Full scale range, 2000 dps(0x30)
+	config[0] = 0x23;
+	config[1] = 0x30;
+	write(file, config, 2);
+	sleep(1);
+
+	// Read 6 bytes of data
+	// lsb first
+	// Read xGyro lsb data from register(0x28)
+	char reg[1] = {0x28};
+	write(file, reg, 1);
+	char data[1] = {0};
+	if(read(file, data, 1) != 1)
+	{
+		printf("Error : Input/Output error \n");
+		exit(1);
+	}
+	char data_0 = data[0];
+
+	// Read xGyro msb data from register(0x29)
+	reg[0] = 0x29;
+	write(file, reg, 1);
+	read(file, data, 1);
+	char data_1 = data[0];
+
+	// Read yGyro lsb data from register(0x2A)
+	reg[0] = 0x2A;
+	write(file, reg, 1);
+	read(file, data, 1);
+	char data_2 = data[0];
+
+	// Read yGyro msb data from register(0x2B)
+	reg[0] = 0x2B;
+	write(file, reg, 1);
+	read(file, data, 1);
+	char data_3 = data[0];
+
+	// Read zGyro lsb data from register(0x2C)
+	reg[0] = 0x2C;
+	write(file, reg, 1);
+	read(file, data, 1);
+	char data_4 = data[0];
+
+	// Read zGyro msb data from register(0x2D)
+	reg[0] = 0x2D;
+	write(file, reg, 1);
+	read(file, data, 1);
+	char data_5 = data[0];
+
+	// Convert the data
+	int xGyro = (data_1 * 256 + data_0);
+	if(xGyro > 32767)
+	{
+		xGyro -= 65536;
+	}
+
+	int yGyro = (data_3 * 256 + data_2);
+	if(yGyro > 32767)
+	{
+		yGyro -= 65536;
+	}
+
+	int zGyro = (data_5 * 256 + data_4);
+	if(zGyro > 32767)
+	{
+	zGyro -= 65536;
+	}
+
+	// Output data to screen
+	printf("Rotation in X-Axis : %d \n", xGyro);
+	printf("Rotation in Y-Axis : %d \n", yGyro);
+	printf("Rotation in Z-Axis : %d \n", zGyro);
+}

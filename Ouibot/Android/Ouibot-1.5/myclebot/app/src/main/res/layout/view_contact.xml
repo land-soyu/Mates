@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/history_list_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_menu_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/top_menu_history"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            android:background="@drawable/bg_control_search_long"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_control_search" />
+
+            <EditText
+                android:id="@+id/search_contect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:hint="@string/contact_add"
+                android:singleLine="true"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_control_long"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="6"
+            android:background="@drawable/btn_control_long"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_addcontact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/contact_plus"
+                android:textColor="@color/top_menu_bg"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/history_list_bg"
+            android:divider="@color/history_list_bg"
+            android:dividerHeight="5dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:soundEffectsEnabled="false"
+            />
+
+        <TextView
+            android:id="@+id/contact_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/history_list_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/no_contact"
+            android:textSize="24dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>

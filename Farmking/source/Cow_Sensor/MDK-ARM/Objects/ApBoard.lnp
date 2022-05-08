@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\objects\system_efm32jg1b.o"
+".\objects\startup_efm32jg1b.o"
+".\objects\em_assert.o"
+".\objects\em_cmu.o"
+".\objects\em_core.o"
+".\objects\em_emu.o"
+".\objects\em_gpio.o"
+".\objects\em_i2c.o"
+".\objects\em_rtcc.o"
+".\objects\em_system.o"
+".\objects\em_usart.o"
+".\objects\em_letimer.o"
+".\objects\i2cspm.o"
+".\objects\main.o"
+".\objects\mems.o"
+".\objects\api.o"
+".\objects\system.o"
+".\objects\sx1276.o"
+".\objects\segger_rtt.o"
+".\objects\segger_rtt_printf.o"
+--library_type=microlib --strict --scatter ".\Objects\ApBoard.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ApBoard.map" -o .\Objects\ApBoard.axf

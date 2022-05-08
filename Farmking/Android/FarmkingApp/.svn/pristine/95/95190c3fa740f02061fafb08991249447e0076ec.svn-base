@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/soyu/.android/build-cache/206f52d8986a6431821e5535c06de4cab14a2a6e/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/soyu/.android/build-cache/206f52d8986a6431821e5535c06de4cab14a2a6e/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/soyu/.android/build-cache/206f52d8986a6431821e5535c06de4cab14a2a6e/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/soyu/.android/build-cache/206f52d8986a6431821e5535c06de4cab14a2a6e/output/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

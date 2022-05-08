@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FarmkingGate</string>
+
+    <string name="title">Farmking GateWay</string>
+
+
+
+
+
+    <string name="check_serial">농장 ID를 입력 하세요.</string>
+    <string name="check_serial_ok">확인</string>
+    <string name="check_serial_ok_message"> ID가 입력되었습니다. 프로그램을 실행합니다.</string>
+    <string name="check_serial_cencal">취소</string>
+    <string name="check_serial_cencal_message">취소를 선택하면 앱을 정상적으로 실행 할 수 없습니다. 종료 합니다.</string>
+
+    <string name="backbutton_click_is_finish"><![CDATA["'"]]>뒤로<![CDATA["'"]]>버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="check_network">네트워크 연결을 확인해 주세요.</string>
+</resources>

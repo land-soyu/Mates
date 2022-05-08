@@ -1,0 +1,53 @@
+#include "spi.h"
+#include "nrf_drv_spi.h"
+#include "app_util_platform.h"
+#include "nrf_gpio.h"
+#include "nrf_delay.h"
+#include "boards.h"
+#include "app_error.h"
+#include <string.h>
+#include "nrf_log.h"
+#include "nrf_log_ctrl.h"
+#include "nrf_log_default_backends.h"
+
+const nrf_drv_spi_t spi = NRF_DRV_SPI_INSTANCE(SPI_INSTANCE);  /**< SPI instance. */
+volatile bool spi_xfer_done;  /**< Flag used to indicate that SPI instance completed the transfer. */
+
+
+void write(uint8_t i)
+{
+    memset(am_rx_buf, 0, am_length);
+	
+    APP_ERROR_CHECK(nrf_drv_spi_transfer(&spi, &i, am_length, am_rx_buf, am_length));
+		nrf_delay_ms(100);
+}	
+
+void spi_event_handler(nrf_drv_spi_evt_t const * p_event,
+                       void *                    p_context)
+{
+    spi_xfer_done = true;
+}
+
+void spi_init(void)
+{
+    NRF_LOG_INFO("SPI OLED.");
+    NRF_LOG_FLUSH();
+
+    nrf_drv_spi_config_t const config =
+		{
+    .sck_pin  = WBSC_SCLK,
+    .mosi_pin = WBSC_MOSI,
+    .ss_pin   = WBSC_CS,
+    .irq_priority = APP_IRQ_PRIORITY_LOW,
+    .orc          = 0xFF,
+    .frequency    = NRF_DRV_SPI_FREQ_8M,
+    .mode         = NRF_DRV_SPI_MODE_0,
+    .bit_order    = NRF_DRV_SPI_BIT_ORDER_MSB_FIRST,			
+		};
+    
+    APP_ERROR_CHECK(nrf_drv_spi_init(&spi, &config, spi_event_handler, NULL));
+
+		
+
+}
+

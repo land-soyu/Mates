@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: alex Administrator, h, LIC=HIVFW-QGIJ0-0FVIC-7JAVJ-TG59G-LS77I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Basic (256K)  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\project\zaigle\Device\SDK\examples\ble_peripheral\zaigle\pca10040\s132\arm5_no_packs\ble_app_uart_pca10040_s132.uvprojx
+Project File Date:  12/07/2017
+
+<h2>Output:</h2>
+Build target 'nrf52832_xxaa'
+compiling main.c...
+..\..\..\i2c\i2c.h(62): warning:  #1295-D: Deprecated declaration show_zaigle - give arg types
+  void show_zaigle();
+..\..\..\i2c\i2c.h(63): warning:  #1295-D: Deprecated declaration pane - give arg types
+  void pane();
+..\..\..\i2c\i2c.h(64): warning:  #1295-D: Deprecated declaration showpic - give arg types
+  void showpic() ;
+..\..\..\i2c\i2c.h(65): warning:  #1295-D: Deprecated declaration GpsImage - give arg types
+  void GpsImage();
+..\..\..\i2c\i2c.h(66): warning:  #1295-D: Deprecated declaration show_zaigle - give arg types
+  void  show_zaigle();
+..\..\..\i2c\i2c.h(74): warning:  #1295-D: Deprecated declaration GpsImage_1 - give arg types
+  void GpsImage_1();
+..\..\..\i2c\i2c.h(75): warning:  #1295-D: Deprecated declaration GpsImage_2 - give arg types
+  void GpsImage_2();
+..\..\..\main.c(726): warning:  #177-D: variable "i" was declared but never referenced
+                uint32_t i=0;
+..\..\..\main.c(686): warning:  #177-D: variable "erase_bonds" was declared but never referenced
+      bool     erase_bonds;
+..\..\..\main.c(647): warning:  #177-D: function "buttons_leds_init" was declared but never referenced
+  static void buttons_leds_init(bool * p_erase_bonds)
+..\..\..\main.c(674): warning:  #177-D: function "power_manage" was declared but never referenced
+  static void power_manage(void)
+..\..\..\main.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=27904 RO-data=3408 RW-data=1436 ZI-data=20484  
+FromELF: creating hex file...
+".\_build\nrf52832_xxaa.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.15.0.pack
+                NordicSemiconductor::Device:Startup:8.15.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.15.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\project\zaigle\Device\SDK\examples\ble_peripheral\zaigle\pca10040\s132\arm5_no_packs\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.15.0
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+      Source file:   Device\Source\system_nrf52.c
+      Include file:  Device\Include\system_nrf52.h
+</pre>
+</body>
+</html>

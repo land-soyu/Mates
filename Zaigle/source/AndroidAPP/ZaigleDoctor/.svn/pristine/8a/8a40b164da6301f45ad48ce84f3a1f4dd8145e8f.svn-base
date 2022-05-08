@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/sjkim/project/speedcall/Zaigle/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/home/sjkim/project/speedcall/Zaigle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/sjkim/project/Zaigle/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/home/sjkim/project/Zaigle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout-v16/notification_template_custom_big.xml"
+    }
+]

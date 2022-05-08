@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "172928790247",
+    "firebase_url": "https://farmking-750d2.firebaseio.com",
+    "project_id": "farmking-750d2",
+    "storage_bucket": "farmking-750d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172928790247:android:5d2edc9dee4e41bc",
+        "android_client_info": {
+          "package_name": "com.matescorp.soyu.farmkingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172928790247-f65hcruhuifl46hnh6qpblbehdj79a5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matescorp.soyu.farmkingapp",
+            "certificate_hash": "6d34928be30e38bb1680286a4229c21f3d5d4eff"
+          }
+        },
+        {
+          "client_id": "172928790247-rrmdcfqcq7st1mrlc7bare0a0drqq767.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matescorp.soyu.farmkingapp",
+            "certificate_hash": "52c6a6e331639881c171f12e8464b56bdd7555ef"
+          }
+        },
+        {
+          "client_id": "172928790247-2504sqpqp0dnueg7rusgs2bivq2hk00g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK4uAprU4iz3IY2EI23mQOD__7UZCjHpA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172928790247-2504sqpqp0dnueg7rusgs2bivq2hk00g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96b5e8"
+    android:gravity="center"
+    android:weightSum="1"
+    >
+
+    <Button
+        android:id="@+id/additem"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="#a9de39"
+        android:text="LOG"
+        android:layout_weight="0.1"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/title"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/logbutton"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:text="LOG"
+        android:layout_weight="0.1"
+        />
+</LinearLayout>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/soyu/.android/build-cache/206f52d8986a6431821e5535c06de4cab14a2a6e/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/soyu/.android/build-cache/206f52d8986a6431821e5535c06de4cab14a2a6e/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

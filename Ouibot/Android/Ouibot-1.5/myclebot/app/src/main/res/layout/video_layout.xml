@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    >
+
+    <FrameLayout
+        android:id="@+id/removte_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="#000000"
+        >
+        <TextView
+            android:id="@+id/call_screen_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#000000"
+            android:textStyle="bold"
+            android:textColor="@color/top_menu_text_color_activity"
+            android:textSize="24dp"
+            />
+        <TextureView
+            android:id="@+id/remote_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:onClick="onRemoteViewClicked"
+            android:soundEffectsEnabled="false"
+            />
+        <FrameLayout
+            android:id="@+id/movecam"
+            android:visibility="gone"
+            android:layout_marginLeft="15px"
+            android:layout_marginBottom="15px"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_callscreen_movecam"
+            >
+            <ImageView
+                android:id="@+id/movecamimage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_callscreen_movecam_handle"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/self_view_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:background="@color/history_list_bg"
+        android:onClick="onSelfViewClicked"
+        android:soundEffectsEnabled="false"
+        >
+
+        <LinearLayout
+            android:id="@+id/self_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="69dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/imageCapture"
+                android:layout_width="69dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_callscreen_screenshot_normal"
+                />
+            <ImageView
+                android:id="@+id/sendSound"
+                android:layout_width="69dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/btn_callscreen_walkietalkie_normal"
+                />
+            <LinearLayout
+                android:id="@+id/end"
+                android:layout_width="124dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:onClick="onEndClicked"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/btn_callscreen_endcall_normal"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_callscreen_endcall"
+                    android:layout_width="48dp"
+                    android:layout_height="22dp" />
+                <TextView
+                    android:text="@string/calling_end"
+                    android:textStyle="bold"
+                    android:textColor="@color/top_menu_bg"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextureView
+            android:id="@+id/self_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_above="@id/self_view_layout"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</FrameLayout>

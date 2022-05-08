@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zaigle Doctor</string>
+    <string name="language">语言</string>
+    <string name="about">信息</string>
+    <string name="qna">Q <![CDATA["&"]]>A</string>
+    <string name="vsersion">版本</string>
+</resources>

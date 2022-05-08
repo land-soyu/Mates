@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009CDE</color>
+    <color name="colorPrimaryDark">#0081B7</color>
+    <color name="colorAccent">#0081B7</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="background_yellow">#88fff944</color>
+    <color name="white">#ffffff</color>
+    <color name="main_back">#B2EBF4</color>
+    <color name="progress_background">#19000000</color>
+    <color name="hint_color">#19000000</color>
+    <color name="zaigle_color">#00a29a</color>
+</resources>

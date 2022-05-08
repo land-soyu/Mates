@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.netseason.myclebot"
+    android:versionCode="1"
+    android:versionName="1.5">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--<permission android:name="android.permission.RECORD_AUDIO" android:protectionLevel="signature" />-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--<permission android:name="android.permission.CAMERA" android:protectionLevel="signature" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="kr.co.netseason.myclebot.IntroActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kr.co.netseason.myclebot.SpemAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.ViewRequestPopupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.SettingAndroidActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.SettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.Security.SecureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"></activity>
+        <activity
+            android:name="kr.co.netseason.myclebot.MessageSendActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="kr.co.netseason.myclebot.MessageDelActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.MessageDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.HistoryDelActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.ContectModifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.ContectAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.UibotAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.SearchPWActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.SearchIDActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".DeviceAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".DeviceAddResultActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".DeviceAddInitActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.CreateIDActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.DialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.CctvActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.PetActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.openwebrtc.CallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="intent.action.mates.ouibot.main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kr.co.netseason.myclebot.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="kr.co.netseason.myclebot.Security.SecureModeSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.Security.SecureModeOuibotSelfSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <!--
+        액티비티가 메인액티비티와 같이 실행되는 문제를 수정하기 위해 singleInstance 옵션을 사용해야함
+        하지만 이렇게 되면 Recent 에서 다시 진입할때는 문제없으나 앱아이콘으로 진입하면 메인이 뜨는 문제가있음
+        (Secure는 다시 진입할 필요없으므로 무시함)
+        Secure는가 singleTask 이면 프로세스 킬 이후 값을 가져오지 못하는 문제가 있음 .
+        -->
+        <activity
+            android:name="kr.co.netseason.myclebot.MasterRequestPopupActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="kr.co.netseason.myclebot.SecureStartedFailPopupActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="kr.co.netseason.myclebot.MasterSettingResultActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="kr.co.netseason.myclebot.Security.SecureDetectedListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.Security.DetectedItemDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.Security.DetectedItemDetailPopupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="kr.co.netseason.myclebot.Security.SecureDetectedListDeleteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="위봇"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="kr.co.netseason.myclebot.SensorWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <service android:name="kr.co.netseason.myclebot.openwebrtc.SignalingChannel" />
+
+        <receiver
+            android:name="kr.co.netseason.myclebot.Service.BootReceiver"
+            android:enabled="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="ACTION.RESTART.PersistentService" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="kr.co.netseason.myclebot.Service.LauncherReceiver">
+            <intent-filter>
+                <action android:name="kr.co.netseason.MYACTION" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="kr.co.netseason.myclebot.Provider.SecureProvider"
+            android:authorities="kr.co.netseason.myclebot.provider.secureProvider"
+            android:exported="true" />
+
+        <receiver android:name="kr.co.netseason.myclebot.Service.BTReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="kr.co.netseason.myclebot.Service.MediaButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED" />
+                <action android:name="android.bluetooth.headset.action.VENDOR_SPECIFIC_HEADSET_EVENT" />
+                <action android:name="android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED" />
+                <action android:name="android.intent.action.VOICE_COMMAND" />
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+
+        <receiver
+            android:name="kr.co.netseason.myclebot.Service.voiceReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="signalvision.com.ouibot.voicerecognition" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

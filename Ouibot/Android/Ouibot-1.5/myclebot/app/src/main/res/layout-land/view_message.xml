@@ -1,0 +1,96 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/historyview"
+    android:background="@color/history_list_bg"
+    android:weightSum="1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="0.72"
+        android:id="@+id/top_menu_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_control_long"
+            android:id="@+id/btn_message_send"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_control_message"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:text="@string/message_transfer"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/top_menu_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_message_del"
+            android:background="@drawable/btn_control_long"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_control_trash"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:text="@string/message_edit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/top_menu_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_weight="0.28"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/message_list"
+            android:background="@color/history_list_bg"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:dividerHeight="5dp"
+            android:divider="@color/history_list_bg" />
+        <TextView
+            android:id="@+id/message_empty"
+            android:textSize="24dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/no_message"
+            android:background="@color/history_list_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+
+</LinearLayout>

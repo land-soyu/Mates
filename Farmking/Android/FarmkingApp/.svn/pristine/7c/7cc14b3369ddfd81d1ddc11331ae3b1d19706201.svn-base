@@ -1,0 +1,309 @@
+package com.matescorp.soyu.farmkingapp;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.os.AsyncTask;
+import android.os.Build;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.inputmethod.EditorInfo;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.matescorp.soyu.farmkingapp.util.DataPreference;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class LoginActivity extends AppCompatActivity {
+    private final String TAG = "LoginActivity";
+    private Context context;
+
+    private UserLoginTask mAuthTask = null;
+
+    private EditText mIdView;
+    private EditText mPasswordView;
+    private CheckBox autologin;
+
+    private String regid = null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        context = getApplicationContext();
+
+        DataPreference.PREF = PreferenceManager.getDefaultSharedPreferences(this);
+
+        if ( DataPreference.getAutoLogin() && DataPreference.getId() != null ) {
+            startActivity(new Intent(context, MainActivity.class));
+            finish();
+        }
+
+        mIdView = (EditText) findViewById(R.id.mIdView);
+        mPasswordView = (EditText) findViewById(R.id.mPasswordView);
+        autologin = (CheckBox) findViewById(R.id.autologin);
+        autologin.setChecked(DataPreference.getAutoLogin());
+
+        Button mLoginButton = (Button) findViewById(R.id.mLoginButton);
+        mLoginButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                attemptLogin();
+            }
+        });
+
+    }
+
+    private void attemptLogin() {
+        if (mAuthTask != null) {
+            return;
+        }
+
+        String id = mIdView.getText().toString();
+        String pwd = mPasswordView.getText().toString();
+
+        if ( id.equals("") || pwd.equals("") ) {
+
+        } else {
+            mAuthTask = new UserLoginTask(id, pwd);
+            mAuthTask.execute(Urls.farmking + "/api/login_post.php");
+        }
+    }
+    /*
+        로그인시 email, password, PushToken, serial, phoneNumber를 같이 넣어준다.
+
+    */
+    public class UserLoginTask extends AsyncTask<String, Void, String> {
+
+        private String mId;
+        private String mPassword;
+
+        public UserLoginTask(String id, String password) {
+            mId = id;
+            mPassword = password;
+        }
+
+        @Override
+        protected String doInBackground(String... args) {
+
+            String returnValue = "";
+            HttpURLConnection conn = null;
+            try {
+                String urlString = args[0];
+                Log.e("!!!", "urlString = " + urlString);
+                URL url = new URL(urlString);
+                // open connection
+                conn = (HttpURLConnection) url.openConnection();
+                conn.setDoInput(true);            // 입력스트림 사용여부
+                conn.setDoOutput(false);            // 출력스트림 사용여부
+                conn.setUseCaches(false);        // 캐시사용 여부
+                conn.setReadTimeout(20000);        // 타임아웃 설정 ms단위
+                conn.setRequestMethod("POST");
+
+                StringBuffer params = new StringBuffer("");
+//                params.append("name=" + URLEncoder.encode(name)); //한글일 경우 URL인코딩
+                params.append("id=" + mId + "&pwd=" + mPassword);
+                PrintWriter output = new PrintWriter(conn.getOutputStream());
+                output.print(params.toString());
+                output.close();
+
+                StringBuffer sb = new StringBuffer();
+                BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+                for (; ; ) {
+                    String line = br.readLine();
+                    if (line == null) break;
+                    sb.append(line + "\n");
+                }
+
+                br.close();
+                conn.disconnect();
+                br = null;
+                conn = null;
+
+                returnValue = sb.toString();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                if (conn != null) {
+                    conn.disconnect();
+                }
+            }
+            return returnValue;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            mAuthTask = null;
+            result = result.trim();
+            Log.e(TAG, "result =" + result);
+
+            try {
+                JSONArray jsona = new JSONArray(result);
+                JSONObject jsono = jsona.getJSONObject(0);
+
+                DataPreference.setFarmName(jsono.getString("farmname"));
+                DataPreference.setSerial(jsono.getString("serial"));
+                DataPreference.setId(jsono.getString("id"));
+                DataPreference.setPwd(jsono.getString("pwd"));
+                DataPreference.setName(jsono.getString("name"));
+                DataPreference.setPhone(jsono.getString("phone"));
+                DataPreference.setAddr(jsono.getString("addr"));
+
+                loginResult(true);
+            } catch (Exception e) {
+                e.printStackTrace();
+                loginResult(false);
+            }
+        }
+
+        @Override
+        protected void onCancelled() {
+            mAuthTask = null;
+        }
+    }
+
+    private void loginResult(boolean b) {
+        if ( b ) {
+            DataPreference.setAutoLogin(autologin.isChecked());
+            startActivity(new Intent(context, MainActivity.class));
+            finish();
+        } else {
+
+        }
+    }
+
+
+    private void registerInBackground() {
+        new AsyncTask<Void, Void, String>() {
+            @Override
+            protected String doInBackground(Void... params) {
+                String msg = "";
+                try {
+//                    if (gcm == null) {
+//                        gcm = GoogleCloudMessaging.getInstance(context);
+//                    }
+//                    regid = gcm.register(SENDER_ID);
+                    msg = "Device registered, registration ID=" + regid;
+                    Log.e(",", "token = " + regid);
+
+                    // 서버에 발급받은 등록 아이디를 전송한다.
+                    // 등록 아이디는 서버에서 앱에 푸쉬 메시지를 전송할 때 사용된다.
+                    sendRegistrationIdToBackend();
+
+                    // 등록 아이디를 저장해 등록 아이디를 매번 받지 않도록 한다.
+                    storeRegistrationId(context, regid);
+                } catch (Exception ex) {
+                    msg = "Error :" + ex.getMessage();
+                    // If there is an error, don't just keep trying to register.
+                    // Require the user to click a button again, or perform
+                    // exponential back-off.
+                }
+                return msg;
+            }
+
+
+        }.execute(null, null, null);
+    }
+
+    private void storeRegistrationId(Context context, String regid) {
+        final SharedPreferences prefs = getGCMPreferences(context);
+        int appVersion = getAppVersion(context);
+        Log.i(TAG, "Saving regId on app version " + appVersion);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("regid", regid);
+        editor.putInt("appVersion", appVersion);
+        editor.commit();
+    }
+
+    private void sendRegistrationIdToBackend() {
+
+    }
+
+    private String getRegistrationId(Context context) {
+        final SharedPreferences prefs = getGCMPreferences(context);
+        String registrationId = prefs.getString("regid", "");
+        if (registrationId.isEmpty()) {
+            Log.i(TAG, "Registration not found.");
+            return "";
+        }
+
+        // 앱이 업데이트 되었는지 확인하고, 업데이트 되었다면 기존 등록 아이디를 제거한다.
+        // 새로운 버전에서도 기존 등록 아이디가 정상적으로 동작하는지를 보장할 수 없기 때문이다.
+        int registeredVersion = prefs.getInt("appVersion", Integer.MIN_VALUE);
+        int currentVersion = getAppVersion(context);
+        if (registeredVersion != currentVersion) {
+            Log.i(TAG, "App version changed.");
+            return "";
+        }
+        return registrationId;
+    }
+
+    private SharedPreferences getGCMPreferences(Context context) {
+        return getSharedPreferences(MainActivity.class.getSimpleName(),
+                Context.MODE_PRIVATE);
+    }
+
+    private static int getAppVersion(Context context) {
+        try {
+            PackageInfo packageInfo = context.getPackageManager()
+                    .getPackageInfo(context.getPackageName(), 0);
+            return packageInfo.versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            // should never happen
+            throw new RuntimeException("Could not get package name: " + e);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (checkPlayServices()) {
+//            gcm = GoogleCloudMessaging.getInstance(this);
+            regid = getRegistrationId(context);
+
+            if (regid.isEmpty()) {
+                registerInBackground();
+            }
+        } else {
+            Log.i(TAG, "No valid Google Play Services APK found.");
+        }
+    }
+
+    private boolean checkPlayServices() {
+//        GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
+//        int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
+//        if (resultCode != ConnectionResult.SUCCESS) {
+//            if (apiAvailability.isUserResolvableError(resultCode)) {
+//                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST)
+//                        .show();
+//            } else {
+//                Log.i(TAG, "This device is not supported.");
+//                finish();
+//            }
+//            return false;
+//        }
+        return true;
+    }
+}
+

@@ -1,0 +1,24 @@
+#include "nrf.h"
+#include "boards.h"
+
+
+#define COMPARE_COUNTERTIME  (3UL)                                        /**< Get Compare event COMPARE_TIME seconds after the counter starts from 0. */
+
+#ifdef BSP_LED_0
+    #define TICK_EVENT_OUTPUT     BSP_LED_0                                 /**< Pin number for indicating tick event. */
+#endif
+#ifndef TICK_EVENT_OUTPUT
+    #error "Please indicate output pin"
+#endif
+#ifdef BSP_LED_1
+    #define COMPARE_EVENT_OUTPUT   BSP_LED_1                                /**< Pin number for indicating compare event. */
+#endif
+#ifndef COMPARE_EVENT_OUTPUT
+    #error "Please indicate output pin"
+#endif
+
+
+
+
+void nowtime(void);
+int trc_init(void);

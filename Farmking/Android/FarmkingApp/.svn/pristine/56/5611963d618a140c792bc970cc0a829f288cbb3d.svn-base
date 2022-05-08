@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d02dcaa413d037bfe2f87aa0bba1000203abd440/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="612f03ca7abdb58765906a241ce34fd3834d88fe">
+        <dex dex="/home/soyu/project/workspaces_farmking/FarmkingApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_68dde0263864031c9317df223056b37965550783/classes.dex" />
+    </item>
+
+</items>

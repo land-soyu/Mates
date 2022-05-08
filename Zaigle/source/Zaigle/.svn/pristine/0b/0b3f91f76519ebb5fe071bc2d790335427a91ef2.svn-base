@@ -1,0 +1,29 @@
+#include "app_util_platform.h"
+
+
+#define HIGH	1
+#define LOW 0
+
+#define TX_RX_BUF_LENGTH        254                 /**< SPI transaction buffer length. */
+
+#define WSBC_RST  23  //res
+#define WSBC_CS   17
+#define WSBC_MISO 12 //D1
+#define WSBC_SCLK 13 //D0
+#define WSBC_SDIN  12 // MOSI
+
+#define WSBC_SDOUT  18
+#define WSBC_RDY  24
+#define WSBC_CLOCK  25
+
+
+#define SPI_INSTANCE  0 /**< SPI instance index. */
+
+
+static uint8_t       am_tx_buf;           /**< TX buffer. */
+static uint8_t       am_rx_buf[2];    /**< RX buffer. */
+static uint8_t am_length = sizeof(am_tx_buf);        /**< Transfer length. */
+
+void spi_init(void);
+void write(uint8_t Data);
+

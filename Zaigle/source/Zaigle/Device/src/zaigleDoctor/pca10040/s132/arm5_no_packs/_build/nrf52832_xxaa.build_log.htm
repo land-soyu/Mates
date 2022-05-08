@@ -1,0 +1,183 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: soyu jung, mates, LIC=JGXEV-PBQ4B-UX4UE-56XG8-XTR5Z-CH3W9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Basic (256K)  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Matescorp_Project\Zaigle\source\Zaigle\Device\src\zaigleDoctor\pca10040\s132\arm5_no_packs\ble_app_blinky_pca10040_s132.uvprojx
+Project File Date:  12/05/2017
+
+<h2>Output:</h2>
+Build target 'nrf52832_xxaa'
+compiling main.c...
+..\..\..\i2c\i2c.h(61): warning:  #1295-D: Deprecated declaration show_zaigle - give arg types
+  void show_zaigle();
+..\..\..\i2c\i2c.h(62): warning:  #1295-D: Deprecated declaration pane - give arg types
+  void pane();
+..\..\..\i2c\i2c.h(63): warning:  #1295-D: Deprecated declaration showpic - give arg types
+  void showpic() ;
+..\..\..\i2c\i2c.h(64): warning:  #1295-D: Deprecated declaration GpsImage - give arg types
+  void GpsImage();
+..\..\..\i2c\i2c.h(65): warning:  #1295-D: Deprecated declaration show_zaigle - give arg types
+  void  show_zaigle();
+..\..\..\i2c\i2c.h(73): warning:  #1295-D: Deprecated declaration GpsImage_1 - give arg types
+  void GpsImage_1();
+..\..\..\i2c\i2c.h(74): warning:  #1295-D: Deprecated declaration GpsImage_2 - give arg types
+  void GpsImage_2();
+..\..\..\main.c(286): warning:  #177-D: variable "err_code" was declared but never referenced
+          uint32_t err_code;
+..\..\..\main.c(303): warning:  #177-D: variable "init" was declared but never referenced
+      ble_lbs_init_t init;
+..\..\..\main.c(586): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                                                        sprintf(data, "9");
+..\..\..\main.c(665): warning:  #177-D: variable "hb" was declared but never referenced
+      uint32_t hb, sp;
+..\..\..\main.c(665): warning:  #177-D: variable "sp" was declared but never referenced
+      uint32_t hb, sp;
+..\..\..\main.c(251): warning:  #177-D: function "led_write_handler" was declared but never referenced
+  static void led_write_handler(uint16_t conn_handle, ble_lbs_t * p_lbs, uint8_t led_state)
+..\..\..\main.c(645): warning:  #177-D: function "power_manage" was declared but never referenced
+  static void power_manage(void)
+..\..\..\main.c: 14 warnings, 0 errors
+compiling boards.c...
+compiling ble_advdata.c...
+compiling ble_conn_params.c...
+compiling ble_conn_state.c...
+compiling ble_srv_common.c...
+compiling nrf_ble_gatt.c...
+compiling ble_lbs.c...
+compiling ble_nus.c...
+compiling nrf_drv_clock.c...
+compiling nrf_drv_common.c...
+compiling nrf_drv_gpiote.c...
+compiling nrf_drv_uart.c...
+compiling nrf_drv_spi.c...
+compiling nrf_drv_twi.c...
+compiling nrf_drv_ppi.c...
+compiling nrf_drv_saadc.c...
+compiling nrf_drv_power.c...
+compiling nrf_drv_timer.c...
+compiling nrf_saadc.c...
+compiling app_button.c...
+compiling app_error.c...
+compiling app_error_weak.c...
+compiling app_scheduler.c...
+compiling app_timer.c...
+compiling app_util_platform.c...
+compiling hardfault_implementation.c...
+compiling nrf_assert.c...
+compiling nrf_atfifo.c...
+compiling nrf_balloc.c...
+compiling nrf_fprintf.c...
+compiling nrf_fprintf_format.c...
+compiling nrf_memobj.c...
+compiling nrf_pwr_mgmt.c...
+compiling nrf_section_iter.c...
+compiling nrf_strerror.c...
+compiling nrf_log_backend_rtt.c...
+compiling nrf_log_backend_serial.c...
+compiling nrf_log_backend_uart.c...
+compiling nrf_log_default_backends.c...
+compiling nrf_log_frontend.c...
+compiling nrf_log_str_formatter.c...
+compiling SEGGER_RTT.c...
+compiling SEGGER_RTT_printf.c...
+compiling SEGGER_RTT_Syscalls_KEIL.c...
+compiling nrf_sdh.c...
+compiling nrf_sdh_ble.c...
+compiling nrf_sdh_soc.c...
+compiling i2c.c...
+..\..\..\i2c\i2c.h(61): warning:  #1295-D: Deprecated declaration show_zaigle - give arg types
+  void show_zaigle();
+..\..\..\i2c\i2c.h(62): warning:  #1295-D: Deprecated declaration pane - give arg types
+  void pane();
+..\..\..\i2c\i2c.h(63): warning:  #1295-D: Deprecated declaration showpic - give arg types
+  void showpic() ;
+..\..\..\i2c\i2c.h(64): warning:  #1295-D: Deprecated declaration GpsImage - give arg types
+  void GpsImage();
+..\..\..\i2c\i2c.h(65): warning:  #1295-D: Deprecated declaration show_zaigle - give arg types
+  void  show_zaigle();
+..\..\..\i2c\i2c.h(73): warning:  #1295-D: Deprecated declaration GpsImage_1 - give arg types
+  void GpsImage_1();
+..\..\..\i2c\i2c.h(74): warning:  #1295-D: Deprecated declaration GpsImage_2 - give arg types
+  void GpsImage_2();
+..\..\..\i2c\i2c.c(421): warning:  #177-D: variable "un_min" was declared but never referenced
+    uint32_t un_min, un_max, un_prev_data;  //variables to calculate the on-board LED brightness that reflects the heartbeats
+..\..\..\i2c\i2c.c(421): warning:  #177-D: variable "un_max" was declared but never referenced
+    uint32_t un_min, un_max, un_prev_data;  //variables to calculate the on-board LED brightness that reflects the heartbeats
+..\..\..\i2c\i2c.c(421): warning:  #177-D: variable "un_prev_data" was declared but never referenced
+    uint32_t un_min, un_max, un_prev_data;  //variables to calculate the on-board LED brightness that reflects the heartbeats
+..\..\..\i2c\i2c.c(422): warning:  #177-D: variable "red" was declared but never referenced
+        uint32_t red, ir, red_pre, ir_pre, red_count, ir_count;
+..\..\..\i2c\i2c.c(422): warning:  #177-D: variable "ir" was declared but never referenced
+        uint32_t red, ir, red_pre, ir_pre, red_count, ir_count;
+..\..\..\i2c\i2c.c(422): warning:  #177-D: variable "red_pre" was declared but never referenced
+        uint32_t red, ir, red_pre, ir_pre, red_count, ir_count;
+..\..\..\i2c\i2c.c(422): warning:  #177-D: variable "ir_pre" was declared but never referenced
+        uint32_t red, ir, red_pre, ir_pre, red_count, ir_count;
+..\..\..\i2c\i2c.c(422): warning:  #177-D: variable "red_count" was declared but never referenced
+        uint32_t red, ir, red_pre, ir_pre, red_count, ir_count;
+..\..\..\i2c\i2c.c(422): warning:  #177-D: variable "ir_count" was declared but never referenced
+        uint32_t red, ir, red_pre, ir_pre, red_count, ir_count;
+..\..\..\i2c\i2c.c(423): warning:  #177-D: variable "un_brightness" was declared but never referenced
+    int32_t un_brightness;
+..\..\..\i2c\i2c.c(424): warning:  #177-D: variable "f_temp" was declared but never referenced
+    float f_temp;
+..\..\..\i2c\i2c.c(425): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\..\i2c\i2c.c: 19 warnings, 0 errors
+compiling algorithm.c...
+compiling battery.c...
+linking...
+Program Size: Code=23860 RO-data=3200 RW-data=1388 ZI-data=19284  
+FromELF: creating hex file...
+".\_build\nrf52832_xxaa.axf" - 0 Error(s), 33 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.14.1.pack
+                NordicSemiconductor::Device:Startup:8.14.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.14.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Matescorp_Project\Zaigle\source\Zaigle\Device\src\zaigleDoctor\pca10040\s132\arm5_no_packs\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.14.1\Device\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.14.1
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+      Source file:   Device\Source\system_nrf52.c
+      Include file:  Device\Include\system_nrf52.h
+</pre>
+</body>
+</html>

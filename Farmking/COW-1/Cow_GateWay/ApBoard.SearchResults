@@ -1,0 +1,11 @@
+---- Uart1_To_Lora Matches (10 in 4 files) ----
+ApBoard.htm (mdk-arm\apboard):main &rArr; Sys_Task &rArr; Uart1_To_Lora &rArr; SX1276StartTx &rArr; SX1276SetOpMode &rArr; SX1276Write &rArr; SX1276WriteBuffer &rArr; HAL_Delay
+ApBoard.htm (mdk-arm\apboard):<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart1_To_Lora
+ApBoard.htm (mdk-arm\apboard):<BR><BR>[Stack]<UL><LI>Max Depth = 1128<LI>Call Chain = Sys_Task &rArr; Uart1_To_Lora &rArr; SX1276StartTx &rArr; SX1276SetOpMode &rArr; SX1276Write &rArr; SX1276WriteBuffer &rArr; HAL_Delay
+ApBoard.htm (mdk-arm\apboard):<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart1_To_Lora
+ApBoard.htm (mdk-arm\apboard):<P><STRONG><a name="[8d]"></a>Uart1_To_Lora</STRONG> (Thumb, 118 bytes, Stack size 1032 bytes, uart1.o(i.Uart1_To_Lora))
+ApBoard.htm (mdk-arm\apboard):<BR><BR>[Stack]<UL><LI>Max Depth = 1120<LI>Call Chain = Uart1_To_Lora &rArr; SX1276StartTx &rArr; SX1276SetOpMode &rArr; SX1276Write &rArr; SX1276WriteBuffer &rArr; HAL_Delay
+ApBoard.htm (mdk-arm\apboard):<BR><BR>[Stack]<UL><LI>Max Depth = 1128<LI>Call Chain = main &rArr; Sys_Task &rArr; Uart1_To_Lora &rArr; SX1276StartTx &rArr; SX1276SetOpMode &rArr; SX1276Write &rArr; SX1276WriteBuffer &rArr; HAL_Delay
+System.c (src):	Uart1_To_Lora();
+Uart1.c (src):void Uart1_To_Lora(void)
+Uart1.h (inc):_UART1_EXT_ void Uart1_To_Lora(void);

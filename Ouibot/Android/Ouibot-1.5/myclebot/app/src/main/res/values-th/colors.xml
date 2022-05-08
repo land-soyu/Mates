@@ -1,0 +1,15 @@
+<resources>
+    <color name="top_menu">#08181C</color>
+    <color name="top_menu_bg">#FFFFFF</color>
+    <color name="top_menu_bg_activity">#4dc1d2</color>
+    <color name="top_menu_text_color">#6e6e6e</color>
+    <color name="top_menu_text_color_activity">#4dc1d2</color>
+    <color name="history_modity">#FFFFFF</color>
+    <color name="history_list_bg">#e1e1e1</color>
+    <color name="video_layout_background">#000000</color>
+    <color name="progress_background">#19000000</color>
+
+    <color name="notice_data_bg">#f1f1f1</color>
+    <color name="notice_title">#919191</color>
+    <color name="notice_data">#e1e1e1</color>
+</resources>

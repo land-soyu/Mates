@@ -1,0 +1,29 @@
+--cpu Cortex-M3
+"apboard\system_stm32l1xx.o"
+"apboard\stm32l1xx_it.o"
+"apboard\stm32l1xx_hal_msp.o"
+"apboard\main.o"
+"apboard\sx1276.o"
+"apboard\system.o"
+"apboard\timer.o"
+"apboard\uart1.o"
+"apboard\startup_stm32l151xb.o"
+"apboard\stm32l1xx_hal_flash_ramfunc.o"
+"apboard\stm32l1xx_hal_flash_ex.o"
+"apboard\stm32l1xx_hal_pwr.o"
+"apboard\stm32l1xx_hal_flash.o"
+"apboard\stm32l1xx_hal_cortex.o"
+"apboard\stm32l1xx_hal_rcc.o"
+"apboard\stm32l1xx_hal_tim.o"
+"apboard\stm32l1xx_hal.o"
+"apboard\stm32l1xx_hal_dma.o"
+"apboard\stm32l1xx_hal_gpio.o"
+"apboard\stm32l1xx_hal_rcc_ex.o"
+"apboard\stm32l1xx_hal_pwr_ex.o"
+"apboard\stm32l1xx_hal_tim_ex.o"
+"apboard\stm32l1xx_hal_uart.o"
+--library_type=microlib --strict --scatter "ApBoard\ApBoard.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ApBoard.map" -o ApBoard\ApBoard.axf

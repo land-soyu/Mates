@@ -1,0 +1,47 @@
+#include "app_util_platform.h"
+
+
+#define HIGH	1
+#define LOW 0
+
+#define TX_RX_BUF_LENGTH        254                 /**< SPI transaction buffer length. */
+
+#define WSBC_RST  23  //res
+#define WSBC_CS   17
+#define WSBC_MISO 12 //D1
+#define WSBC_SCLK 13 //D0
+#define WSBC_SDIN  12 // MOSI
+
+#define WSBC_SDOUT  18
+#define WSBC_RDY  24
+#define WSBC_CLOCK  25
+
+//* AFE4300 register address definitions
+#define ADC_DATA_RESULT         0x00
+#define ADC_CONTROL_REGISTER    0x01
+#define MISC1_REGISTER          0x02
+#define MISC2_REGISTER          0x03
+#define DEVICE_CONTROL_1        0x09
+#define ISW_MATRIX              0x0A
+#define VSW_MATRIX              0x0B
+#define IQ_MODE_ENABLE          0x0C
+#define WEIGHT_SCALE_CONTROL    0x0D
+#define BCM_DAC_FREQ            0x0E
+#define DEVICE_CONTROL_2        0x0F
+#define ADC_CONTROL_REGISTER_2  0x10
+#define MISC3_REGISTER          0x1A
+//*/
+
+#define SPI_INSTANCE  0 /**< SPI instance index. */
+
+
+static uint8_t       am_tx_buf;           /**< TX buffer. */
+static uint8_t       am_rx_buf[2];    /**< RX buffer. */
+static uint8_t am_length = sizeof(am_tx_buf);        /**< Transfer length. */
+
+void spi_init(void);
+void write(uint8_t Data);
+int readRegister(unsigned char address);
+
+void resetAFE4300();
+void afe4300_init(void);

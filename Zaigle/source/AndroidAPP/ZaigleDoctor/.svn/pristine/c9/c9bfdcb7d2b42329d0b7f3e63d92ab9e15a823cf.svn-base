@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "/home/sjkim/project/speedcall/Zaigle/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-jp/values-jp.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 50,
+                    "endOffset": 101
+                },
+                "from": {
+                    "file": "/home/sjkim/project/speedcall/Zaigle/app/src/main/res/values-jp/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endColumn": 50,
+                        "endOffset": 62
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/sjkim/project/Zaigle/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-jp/values-jp.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 50,
+                    "endOffset": 101
+                },
+                "from": {
+                    "file": "/home/sjkim/project/Zaigle/app/src/main/res/values-jp/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endColumn": 50,
+                        "endOffset": 62
+                    }
+                }
+            }
+        ]
+    }
+]
